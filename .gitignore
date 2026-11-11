@@ -1,15 +1,65 @@
-# Python
-__pycache__/
-*.pyc
-venv/
-.venv/
 
-# Environment
+# =====================================
+# Environment variables and secrets
+# =====================================
 .env
 .env.*
+!.env.example
 
-# IDE
-.vscode/
+# =====================================
+# Python virtual environments
+# =====================================
+venv/
+.venv/
+env/
 
-# Temporary files
+# =====================================
+# Python cache files
+# =====================================
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# =====================================
+# Raw, processed and rejected datasets
+# =====================================
+data/raw/
+data/processed/
+data/rejected/
+
+# =====================================
+# Database files
+# =====================================
+*.db
+*.sqlite
+*.sqlite3
+
+# =====================================
+# Logs
+# =====================================
 *.log
+
+# =====================================
+# IDE and editor
+# =====================================
+.vscode/
+.idea/
+
+# =====================================
+# Operating system files
+# =====================================
+.DS_Store
+Thumbs.db
+
+# =====================================
+# Node.js (for future frontend)
+# =====================================
+node_modules/
+dist/
+build/
+
+# =====================================
+# Jupyter Notebook
+# =====================================
+.ipynb_checkpoints/
